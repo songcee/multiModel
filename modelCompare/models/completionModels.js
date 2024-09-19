@@ -133,7 +133,6 @@ class codestralModel extends openaiModel {
     });
   }
 }
-
 class hipilotModel extends openaiModel {
   constructor() {
     super({
