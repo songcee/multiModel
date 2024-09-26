@@ -1,0 +1,83 @@
+[finalResult] java_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率32.70%（327/1000）
+CodeQwen1.5-7B正确率29.70%（297/1000）
+hipilot正确率22.60%（226/1000）
+[finalResult] java_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+CodeQwen1.5-7B正确率22.20%（222/1000）
+hipilot正确率24.40%（244/1000）
+CodeQwen2.5-7B正确率30.10%（301/1000）
+[finalResult] java_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,CodeQwen1.5-7B
+hipilot正确率9.00%（90/1000）
+CodeQwen2.5-7B正确率35.50%（355/1000）
+CodeQwen1.5-7B正确率32.70%（327/1000）
+
+
+[finalResult] javascript_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率35.10%（351/1000）
+CodeQwen1.5-7B正确率32.60%（326/1000）
+hipilot正确率26.30%（263/1000）
+[finalResult] javascript_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+CodeQwen1.5-7B正确率21.60%（216/1000）
+hipilot正确率27.40%（274/1000）
+CodeQwen2.5-7B正确率35.70%（357/1000）
+[finalResult] javascript_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,CodeQwen1.5-7B
+hipilot正确率7.60%（76/1000）
+CodeQwen2.5-7B正确率35.40%（354/1000）
+CodeQwen1.5-7B正确率33.80%（338/1000）
+
+
+[finalResult] javascript_result.json 1000条续写片段，
+  模型输入顺序：CodeQwen2.5-7B,CodeQwen1.5-7B,hipilot
+  CodeQwen2.5-7B正确率33.60%（336/1000）
+CodeQwen1.5-7B正确率30.90%（309/1000）
+hipilot正确率25.90%（259/1000）
+[finalResult] javascript_result.json 1000条续写片段，
+  模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+  CodeQwen1.5-7B正确率21.70%（217/1000）
+hipilot正确率26.00%（260/1000）
+CodeQwen2.5-7B正确率35.70%（357/1000）
+[finalResult] javascript_result.json 1000条续写片段，
+  模型输入顺序：hipilot,CodeQwen2.5-7B,CodeQwen1.5-7B
+  hipilot正确率8.70%（87/1000）
+CodeQwen2.5-7B正确率33.90%（339/1000）
+CodeQwen1.5-7B正确率33.40%（334/1000）
+
+
+
+
+[finalResult] zrandom_java_result.json 100条续写片段，
+  模型输入顺序：CodeQwen2.5-7B,CodeQwen1.5-7B,hipilot
+  CodeQwen2.5-7B正确率38.00%（38/100）
+CodeQwen1.5-7B正确率29.00%（29/100）
+hipilot正确率31.00%（31/100）
+[finalResult] zrandom_java_result.json 100条续写片段，
+  模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+  CodeQwen1.5-7B正确率23.00%（23/100）
+hipilot正确率31.00%（31/100）
+CodeQwen2.5-7B正确率35.00%（35/100）
+[finalResult] zrandom_java_result.json 100条续写片段，
+  模型输入顺序：hipilot,CodeQwen2.5-7B,CodeQwen1.5-7B
+  hipilot正确率11.00%（11/100）
+CodeQwen2.5-7B正确率42.00%（42/100）
+CodeQwen1.5-7B正确率30.00%（30/100）
+[finalResult] zrandom_javascript_result.json 100条续写片段，
+  模型输入顺序：CodeQwen2.5-7B,CodeQwen1.5-7B,hipilot
+  CodeQwen2.5-7B正确率31.00%（31/100）
+CodeQwen1.5-7B正确率36.00%（36/100）
+hipilot正确率25.00%（25/100）
+[finalResult] zrandom_javascript_result.json 100条续写片段，
+  模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+  CodeQwen1.5-7B正确率27.00%（27/100）
+hipilot正确率25.00%（25/100）
+CodeQwen2.5-7B正确率37.00%（37/100）
+[finalResult] zrandom_javascript_result.json 100条续写片段，
+  模型输入顺序：hipilot,CodeQwen2.5-7B,CodeQwen1.5-7B
+  hipilot正确率10.00%（10/100）
+CodeQwen2.5-7B正确率29.00%（29/100）
+CodeQwen1.5-7B正确率34.00%（34/100）

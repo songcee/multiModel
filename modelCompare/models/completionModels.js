@@ -19,7 +19,11 @@ class openaiModel {
   constructor(data = {}) {
     this.url = data.url;
     this.model = data.model;
-    this.headers = data.headers;
+    this.headers = data.headers || { 'Content-Type': 'application/json' };
+  }
+
+  get model() {
+    return this.model;
   }
 
   generateprompt(params = {}) {
@@ -43,16 +47,17 @@ class openaiModel {
       body,
     });
   }
+  handelResponce(text) {
+    return text;
+  }
 }
 
-class codeqwenModel extends openaiModel {
+class codeqwen15Model extends openaiModel {
   constructor() {
     super({
-      url: 'https://hithink-oslm.myhexin.com/codeqwen/v1/completions',
+      url: 'https://hithink-oslm.myhexin.com/deepseekcoder/v1/completions',
+      // url: 'https://hithink-oslm.myhexin.com/codeqwen/v1/completions',
       model: 'CodeQwen1.5-7B',
-      headers: {
-        'Content-Type': 'application/json',
-      },
     });
   }
   generateprompt(params) {
@@ -60,6 +65,30 @@ class codeqwenModel extends openaiModel {
       prompt: `<fim_prefix>${params.prompt}<fim_suffix>${params.suffix}<fim_middle>`,
       max_tokens: 300,
     });
+  }
+}
+class codeqwen25Model extends openaiModel {
+  constructor() {
+    super({
+      url: 'https://hithink-oslm.myhexin.com/codeqwen/v1/completions',
+      model: 'CodeQwen2.5-7B',
+    });
+  }
+  generateprompt(params) {
+    return Object.assign(super.generateprompt(params), {
+      prompt: `<|fim_prefix|>${params.prompt}<|fim_suffix|>${params.suffix}<|fim_middle|>`,
+      // stop: ['\n\n\n', '\n\n'],
+      max_tokens: 300,
+    });
+  }
+  handelResponce(text) {
+    const splitArr = ['<|file_sep|>', '<|fim_pad|>', '<|fim_prefix|>', '<|cursor|>'];
+    for (let i = 0; i < splitArr.length; i++) {
+      if (text.indexOf(splitArr[i]) > -1) {
+        text = text.split(splitArr[i])[0];
+      }
+    }
+    return text;
   }
 }
 class deepseekModel extends openaiModel {
@@ -96,7 +125,6 @@ class deepseek16bModel extends openaiModel {
     return Object.assign(super.generateprompt(params), {
       prompt: `<｜fim▁begin｜>${params.prompt}<｜fim▁hole｜>${params.suffix}<｜fim▁end｜>`,
       max_tokens: 100,
-      // deepseek的n必须为1
       n: 1,
     });
   }
@@ -135,40 +163,69 @@ class codestralModel extends openaiModel {
 }
 class hipilotModel extends openaiModel {
   constructor() {
+    // 内网接口
+    // super({
+    //   url: 'https://hipilot.myhexin.com/code-cvn/v1/completions',
+    //   model: 'hipilot',
+    //   headers: {
+    //     token:
+    //       'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBJZCI6IjYxMzJlZDIxNjk5ZDQ2NzZiZTkzNzg0ZmU3ODY4MWNlIiwiZW1haWwiOiJ5dXhpbnhpbkBteWhleGluLmNvbSIsImN1cnJlbnRUaW1lIjoxNzI2Mjk0NzEyOTQ5LCJleHAiOjE3Mjg4ODY3MTJ9.fiC1gYPHsj9_7foPFCgS732RHzfLbv_VAakVSUmo4_E',
+    //     appid: '6132ed21699d4676be93784fe78681ce',
+    //     'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+    //     'Content-Type': 'application/json',
+    //     Accept: '*/*',
+    //     Host: 'hipilot.myhexin.com',
+    //     Connection: 'keep-alive',
+    //   },
+    // });
+    // 外网接口
     super({
-      url: 'https://hipilot.myhexin.com/code-cvn/v1/completions',
+      url: 'https://rtahz.10jqka.com.cn/code-cvn/v1/completions',
       model: 'hipilot',
       headers: {
         token:
-          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBJZCI6IjYxMzJlZDIxNjk5ZDQ2NzZiZTkzNzg0ZmU3ODY4MWNlIiwiZW1haWwiOiJ5dXhpbnhpbkBteWhleGluLmNvbSIsImN1cnJlbnRUaW1lIjoxNzI2Mjk0NzEyOTQ5LCJleHAiOjE3Mjg4ODY3MTJ9.fiC1gYPHsj9_7foPFCgS732RHzfLbv_VAakVSUmo4_E',
+          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBJZCI6ImY0YmExYWRjZWIxNDRhYWM5ODdkYTc4ZTA3ZTNlZGExIiwiY3VycmVudFRpbWUiOjE3MjY3MzAwNTU5MTUsImlhdCI6MTcyNjczMDA1NSwiZXhwIjoxNzI5MzIyMDU1fQ.BfktcgG6yw1_Uook8U0EUHgMaS_otzt_OWzLep8Y1As',
         appid: '6132ed21699d4676be93784fe78681ce',
         'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
         'Content-Type': 'application/json',
         Accept: '*/*',
-        Host: 'hipilot.myhexin.com',
         Connection: 'keep-alive',
       },
     });
   }
 
   generateprompt(params = {}) {
+    let recentFile = [];
+    if (params.relevantFile) {
+      params.relevantFile.split('<file_path>').forEach((file) => {
+        if (!file) return true;
+        // file中会有多个\n，截取第一个\n前后的内容，分别存储
+        const fileSplit = file.split('\n');
+        const filePath = fileSplit.splice(0, 1).join('\n');
+        recentFile.push({
+          file_path: filePath,
+          file_content: fileSplit.join('\n'),
+        });
+      });
+    }
     return {
       trace_id: 'af1388b3-7e34-40a7-98db-9030504eac95',
       session_id: '63dc2d3c-d118-4b98-bdaf-5449318e6fa9',
       user_id: 'yuxinxin@myhexin.com',
-      scene: 'completion',
-      prompt: params.prompt,
-      suffix: params.suffix,
-      stream: false,
       remote_svc: 'vscode',
       remote_ip: '192.168.31.84',
       remote_mac: '3c:a6:f6:1b:28:14',
-      max_tokens: params.max_tokens || 32,
       remote_version: '1.28.0-20240904',
-      language: 'js',
-      file_path: '/Users/yuxinxin/workspace/code-review/ai-addstock-front/src/utils/common.ts',
-      file_suffix: 'ts',
+      scene: 'completion',
+      n: 1,
+      stream: false,
+      suffix: params.suffix,
+      prompt: params.prompt,
+      language: params.template,
+      max_tokens: params.max_tokens || 64,
       single: false,
+      file_path: params.filePath,
+      recent_file: recentFile.length > 0 ? recentFile : void 0,
     };
   }
   sendRequest(data = {}) {
@@ -182,7 +239,8 @@ class hipilotModel extends openaiModel {
 }
 
 export default {
-  codeqwenModel,
+  codeqwen15Model,
+  codeqwen25Model,
   deepseekModel,
   deepseek16bModel,
   codellamaModel,

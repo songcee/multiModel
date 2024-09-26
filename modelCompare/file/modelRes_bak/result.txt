@@ -1,0 +1,252 @@
+[finalResult] zrandom_cpp_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率23.90%（239/1000）
+deepseek-chat-lite正确率5.10%（51/1000）
+CodeQwen1.5-7B正确率16.10%（161/1000）
+hipilot正确率19.30%（193/1000）
+
+[finalResult] zrandom_cpp_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率4.70%（47/1000）
+CodeQwen1.5-7B正确率16.50%（165/1000）
+hipilot正确率13.70%（137/1000）
+CodeQwen2.5-7B正确率28.40%（284/1000）
+
+[finalResult] zrandom_cpp_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率13.70%（137/1000）
+hipilot正确率13.60%（136/1000）
+CodeQwen2.5-7B正确率29.70%（297/1000）
+deepseek-chat-lite正确率5.20%（52/1000）
+
+[finalResult] zrandom_cpp_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率4.00%（40/1000）
+CodeQwen2.5-7B正确率27.50%（275/1000）
+deepseek-chat-lite正确率5.00%（50/1000）
+CodeQwen1.5-7B正确率19.10%（191/1000）
+
+[finalResult] zrandom_go_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率40.40%（404/1000）
+deepseek-chat-lite正确率32.10%（321/1000）
+CodeQwen1.5-7B正确率24.60%（246/1000）
+hipilot正确率28.80%（288/1000）
+
+[finalResult] zrandom_go_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率27.00%（270/1000）
+CodeQwen1.5-7B正确率25.40%（254/1000）
+hipilot正确率18.90%（189/1000）
+CodeQwen2.5-7B正确率48.80%（488/1000）
+
+[finalResult] zrandom_go_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率18.00%（180/1000）
+hipilot正确率19.80%（198/1000）
+CodeQwen2.5-7B正确率47.90%（479/1000）
+deepseek-chat-lite正确率30.00%（300/1000）
+
+[finalResult] zrandom_go_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率7.80%（78/1000）
+CodeQwen2.5-7B正确率46.30%（463/1000）
+deepseek-chat-lite正确率33.30%（333/1000）
+CodeQwen1.5-7B正确率25.70%（257/1000）
+
+[finalResult] zrandom_java_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率24.90%（249/1000）
+deepseek-chat-lite正确率27.30%（273/1000）
+CodeQwen1.5-7B正确率26.20%（262/1000）
+hipilot正确率17.20%（172/1000）
+
+[finalResult] zrandom_java_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率24.20%（242/1000）
+CodeQwen1.5-7B正确率23.40%（234/1000）
+hipilot正确率17.20%（172/1000）
+CodeQwen2.5-7B正确率28.30%（283/1000）
+
+[finalResult] zrandom_java_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率19.60%（196/1000）
+hipilot正确率19.50%（195/1000）
+CodeQwen2.5-7B正确率26.00%（260/1000）
+deepseek-chat-lite正确率24.60%（246/1000）
+
+[finalResult] zrandom_java_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率7.80%（78/1000）
+CodeQwen2.5-7B正确率29.30%（293/1000）
+deepseek-chat-lite正确率30.90%（309/1000）
+CodeQwen1.5-7B正确率26.50%（265/1000）
+
+[finalResult] zrandom_javascript_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率28.80%（288/1000）
+deepseek-chat-lite正确率32.30%（323/1000）
+CodeQwen1.5-7B正确率31.00%（310/1000）
+hipilot正确率18.30%（183/1000）
+
+[finalResult] zrandom_javascript_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率28.70%（287/1000）
+CodeQwen1.5-7B正确率29.90%（299/1000）
+hipilot正确率18.50%（185/1000）
+CodeQwen2.5-7B正确率34.30%（343/1000）
+
+[finalResult] zrandom_javascript_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率21.20%（212/1000）
+hipilot正确率21.90%（219/1000）
+CodeQwen2.5-7B正确率31.70%（317/1000）
+deepseek-chat-lite正确率30.50%（305/1000）
+
+[finalResult] zrandom_javascript_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率7.10%（71/1000）
+CodeQwen2.5-7B正确率31.60%（316/1000）
+deepseek-chat-lite正确率32.10%（321/1000）
+CodeQwen1.5-7B正确率31.20%（312/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率19.90%（199/1000）
+deepseek-chat-lite正确率28.30%（283/1000）
+CodeQwen1.5-7B正确率0.00%（0/1000）
+hipilot正确率17.60%（176/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率26.40%（264/1000）
+CodeQwen1.5-7B正确率0.00%（0/1000）
+hipilot正确率18.60%（186/1000）
+CodeQwen2.5-7B正确率24.90%（249/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率0.00%（0/1000）
+hipilot正确率12.30%（123/1000）
+CodeQwen2.5-7B正确率25.40%（254/1000）
+deepseek-chat-lite正确率30.70%（307/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率12.00%（120/1000）
+CodeQwen2.5-7B正确率25.10%（251/1000）
+deepseek-chat-lite正确率30.20%（302/1000）
+CodeQwen1.5-7B正确率0.00%（0/1000）
+
+[finalResult] zrandom_typescript_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率34.50%（345/1000）
+deepseek-chat-lite正确率35.40%（354/1000）
+CodeQwen1.5-7B正确率31.50%（315/1000）
+hipilot正确率22.70%（227/1000）
+
+[finalResult] zrandom_typescript_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率33.60%（336/1000）
+CodeQwen1.5-7B正确率31.60%（316/1000）
+hipilot正确率23.30%（233/1000）
+CodeQwen2.5-7B正确率39.40%（394/1000）
+
+[finalResult] zrandom_typescript_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率22.90%（229/1000）
+hipilot正确率26.50%（265/1000）
+CodeQwen2.5-7B正确率37.20%（372/1000）
+deepseek-chat-lite正确率34.30%（343/1000）
+
+[finalResult] zrandom_typescript_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率7.10%（71/1000）
+CodeQwen2.5-7B正确率36.70%（367/1000）
+deepseek-chat-lite正确率37.10%（371/1000）
+CodeQwen1.5-7B正确率30.90%（309/1000）
+
+[finalResult] zrandom_typescriptreact_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率30.00%（300/1000）
+deepseek-chat-lite正确率36.20%（362/1000）
+CodeQwen1.5-7B正确率29.50%（295/1000）
+hipilot正确率24.50%（245/1000）
+
+[finalResult] zrandom_typescriptreact_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率34.10%（341/1000）
+CodeQwen1.5-7B正确率29.80%（298/1000）
+hipilot正确率26.10%（261/1000）
+CodeQwen2.5-7B正确率36.00%（360/1000）
+
+[finalResult] zrandom_typescriptreact_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率20.50%（205/1000）
+hipilot正确率29.50%（295/1000）
+CodeQwen2.5-7B正确率34.70%（347/1000）
+deepseek-chat-lite正确率34.80%（348/1000）
+
+[finalResult] zrandom_typescriptreact_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率8.80%（88/1000）
+CodeQwen2.5-7B正确率32.90%（329/1000）
+deepseek-chat-lite正确率39.30%（393/1000）
+CodeQwen1.5-7B正确率31.30%（313/1000）
+
+[finalResult] zrandom_vue_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率29.80%（298/1000）
+deepseek-chat-lite正确率35.00%（350/1000）
+CodeQwen1.5-7B正确率29.40%（294/1000）
+hipilot正确率23.80%（238/1000）
+
+[finalResult] zrandom_vue_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率33.30%（333/1000）
+CodeQwen1.5-7B正确率28.00%（280/1000）
+hipilot正确率23.10%（231/1000）
+CodeQwen2.5-7B正确率37.20%（372/1000）
+
+[finalResult] zrandom_vue_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率19.70%（197/1000）
+hipilot正确率26.50%（265/1000）
+CodeQwen2.5-7B正确率34.90%（349/1000）
+deepseek-chat-lite正确率33.50%（335/1000）
+
+[finalResult] zrandom_vue_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率8.80%（88/1000）
+CodeQwen2.5-7B正确率32.00%（320/1000）
+deepseek-chat-lite正确率35.70%（357/1000）
+CodeQwen1.5-7B正确率29.40%（294/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B,hipilot
+CodeQwen2.5-7B正确率20.80%（208/1000）
+deepseek-chat-lite正确率26.60%（266/1000）
+CodeQwen1.5-7B正确率24.00%（240/1000）
+hipilot正确率15.80%（158/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：deepseek-chat-lite,CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B
+deepseek-chat-lite正确率25.20%（252/1000）
+CodeQwen1.5-7B正确率23.30%（233/1000）
+hipilot正确率17.90%（179/1000）
+CodeQwen2.5-7B正确率27.00%（270/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：CodeQwen1.5-7B,hipilot,CodeQwen2.5-7B,deepseek-chat-lite
+CodeQwen1.5-7B正确率18.80%（188/1000）
+hipilot正确率22.40%（224/1000）
+CodeQwen2.5-7B正确率22.50%（225/1000）
+deepseek-chat-lite正确率24.30%（243/1000）
+
+[finalResult] zrandom_swift_result.json 1000条续写片段，
+模型输入顺序：hipilot,CodeQwen2.5-7B,deepseek-chat-lite,CodeQwen1.5-7B
+hipilot正确率9.00%（90/1000）
+CodeQwen2.5-7B正确率26.20%（262/1000）
+deepseek-chat-lite正确率30.90%（309/1000）
+CodeQwen1.5-7B正确率28.20%（282/1000）
+
